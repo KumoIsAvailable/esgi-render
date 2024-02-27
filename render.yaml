@@ -3,7 +3,7 @@ services:
   - type: web
     name: webdis
     runtime: docker
-    repo: https://git@github.com:KumoIsAvailable/esgi-render.git # optional
+    repo: https://git@github.com/KumoIsAvailable/esgi-render.git # optional
     region: oregon # optional (defaults to oregon)
     plan: free # optional (defaults to starter instance type)
     branch: master # optional (defaults to master)
