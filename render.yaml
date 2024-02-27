@@ -30,7 +30,7 @@ services:
   - type: pserv
     name: minio
     runtime: docker
-    repo: https://github.com/render-examples/minio.git # optional
+    repo: https://git@github.com/KumoIsAvailable/esgi-render.git # optional
     envVars:
     - key: MINIO_ROOT_PASSWORD
       generateValue: true # will generate a base64-encoded 256-bit secret
@@ -46,7 +46,7 @@ services:
   - type: web
     name: sinatra
     runtime: ruby
-    repo: https://github.com/render-examples/sinatra
+    repo: https://git@github.com/KumoIsAvailable/esgi-render.git
     scaling:
       minInstances: 1
       maxInstances: 3
@@ -83,7 +83,7 @@ services:
     schedule: "0 * * * *"
     buildCommand: "true" # ensure it's a string
     startCommand: date
-    repo: https://github.com/render-examples/docker.git # optional
+    repo: https://git@github.com/KumoIsAvailable/esgi-render.git # optional
   # A background worker that consumes a queue
   - type: worker
     name: queue
